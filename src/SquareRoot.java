@@ -2,13 +2,13 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
+class SquareRoot
 {
     public static void main (String[] args) throws java.lang.Exception
     {
 
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enyer the no of test case");
+        System.out.println("Enter the no of test case");
         int t=sc.nextInt();
         while(t-->0){
             int n=sc.nextInt();
