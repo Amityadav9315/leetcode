@@ -3,6 +3,7 @@ import java.lang.*;
     public static  void main (String[] args) throws java.lang.Exception
     {
         Scanner sc=new Scanner(System.in);
+        System.out.println("Entre the number");
             int n=sc.nextInt();
             int k=sc.nextInt();
             int count=0;
