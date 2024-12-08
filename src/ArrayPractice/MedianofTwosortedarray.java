@@ -1,8 +1,10 @@
 package ArrayPractice;
 
+import java.util.Scanner;
+
 public class MedianofTwosortedarray {
-    class Solution {
-        public double findMedianSortedArrays(int m,int n,int[] nums1, int[] nums2) {
+
+        static void  findMedianSortedArrays(int m,int n,int[] nums1, int[] nums2) {
 
             int[] merge=new int[m+n];
 
@@ -16,17 +18,17 @@ public class MedianofTwosortedarray {
             for(int i=0; i<merge.length; i++){
                 sum=sum+merge[i];
             }
-            float medium=sum/merge.length;
+            double medium=sum/merge.length;
             System.out.println(medium);
         }
 
-        public static void  main(String[] args){
+        public static   void  main(String[] args){
             Scanner sc=new Scanner(System.in);
             int m=sc.nextInt();
             int n=sc.nextInt();
             int[] nums1=new int[m];
             for(int i=0; i<m; i++){
-                nums1[i]=sc.nextint();
+                nums1[i]=sc.nextInt();
             }
             int[] nums2=new int[n];
             for(int i=0; i<n; i++){
@@ -37,4 +39,4 @@ public class MedianofTwosortedarray {
 
     }
 
-}
+
