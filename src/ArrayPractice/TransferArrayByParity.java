@@ -11,7 +11,17 @@ public class TransferArrayByParity {
         for(int i=0; i<n; i++){
             nums[i]=sc.nextInt();
         }
-        int[] result=sc.nextInt();
+        int[] result=new int[n];
+        for(int i=0; i<n; i++){
+            if(nums[i]%2==0){
+                result[i]=0;
+            }
+            else{
+                result[i]=1;
+            }
+        }
+
+
 
     }
 
