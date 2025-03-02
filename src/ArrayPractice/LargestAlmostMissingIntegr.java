@@ -1,10 +1,11 @@
 package ArrayPractice;
 
-public class LargestAlmostMissingIntegr {
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
-    import java.util.*;
-
-    public class Solution {
+public class LargestAlmostMissingIntegr{
         public int largestInteger(int[] nums, int k){
             Map<Integer, Integer> countMap = new HashMap<>();
 
@@ -30,13 +31,13 @@ public class LargestAlmostMissingIntegr {
             return largest;
         }
 
-        public static void main(String[] args) {
+        public static <Solution> void main(String[] args) {
             Solution solution = new Solution();
 
 
             int[] nums1 = {3, 9, 2, 1, 7};
             int k1 = 3;
-            System.out.println(solution.largestInteger(nums1, k1));
+            System.out.println(solution.toString(nums1, k1));
 
 
         }
