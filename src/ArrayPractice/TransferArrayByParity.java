@@ -21,8 +21,10 @@ public class TransferArrayByParity {
                 result[i]=1;
             }
         }
-        for(int i=0; i<n; i++){
-            result= Arrays.stream(result).sorted();
+        Arrays.sort(result);
+
+        for(int x:result){
+            System.out.print(result);
         }
 
 
