@@ -1,5 +1,6 @@
 package ArrayPractice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TransferArrayByParity {
@@ -19,6 +20,9 @@ public class TransferArrayByParity {
             else{
                 result[i]=1;
             }
+        }
+        for(int i=0; i<n; i++){
+            result= Arrays.stream(result).sorted();
         }
 
 
