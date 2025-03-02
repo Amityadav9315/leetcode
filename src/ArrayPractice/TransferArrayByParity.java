@@ -24,7 +24,7 @@ public class TransferArrayByParity {
         Arrays.sort(result);
 
         for(int x:result){
-            System.out.print(result);
+            System.out.print(x+" ");
         }
 
 
