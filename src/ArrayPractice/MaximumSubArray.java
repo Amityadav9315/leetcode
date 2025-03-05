@@ -3,14 +3,13 @@ package ArrayPractice;
 import java.util.Scanner;
 
 public class MaximumSubArray {
-        public int maxSubArray(int[] nums) {
+        public static int maxSubArray(int[] nums) {
             int n=nums.length;
             int sum=0;
             int max=0;
 
             for(int i=0; i<n; i++){
                 for(int j=i; j<n; j++){
-                    if()
                         sum=sum+nums[j];
                     if(sum>max){
                         max=sum;
@@ -18,7 +17,12 @@ public class MaximumSubArray {
                 }
                 sum=0;
             }
-            return max;
+            if(nums.length==1) {
+                return nums[0];
+            }
+            else{
+                return max;
+            }
 
         }
 
@@ -30,5 +34,6 @@ public class MaximumSubArray {
             nums[i]=sc.nextInt();
 
     }
+        maxSubArray(nums);
     }
 }
