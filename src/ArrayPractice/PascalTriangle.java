@@ -15,9 +15,19 @@ public class PascalTriangle {
 
     static  void pascalTriangle(int n){
 
+        PascalTriangle  p=new PascalTriangle();
+
         for(int i=0;i<=n; i++){
             for(int j=0; j<=n-i; j++){
                 System.out.println(" ");
+            }
+
+            for(int j=0; j<i; j++){
+                System.out.print(
+                        " "
+                                + g.factorial(i)
+                                / (g.factorial(i - j)
+                                * g.factorial(j)));
             }
         }
     }
